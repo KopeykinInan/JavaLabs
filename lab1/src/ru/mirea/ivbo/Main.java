@@ -21,7 +21,8 @@ public class Main {
         System.out.println("Поиск среднего арифметического и  расчет суммы всех элементов \n"
                           +"============================================================= \n"
                           +"Введите количество элементов массива");
-        int[] mass = new int[sc.nextInt()];
+        var arraySize = sc.nextInt();
+        int[] mass = new int[arraySize];
         System.out.println("Введите элементы массива");
         for(int i = 0; i< mass.length; i++){
             System.out.printf("элемент %d = ",i+1);
@@ -37,8 +38,10 @@ public class Main {
 
     private static void maxAndMin(){
         System.out.println("Поиск max и min элемента в массиве и расчет суммы всех элементов \n"
-                          +"================================================================ \n" +"Введите количество элементов массива");
-        int[] mass = new int[sc.nextInt()];
+                          +"================================================================ \n"
+                          +"Введите количество элементов массива");
+        var arraySize = sc.nextInt();
+        int[] mass = new int[arraySize];
         System.out.println("Введите элементы массива:");
         for(int i = 0; i< mass.length; i++){
             System.out.printf("элемент %d = ",i+1);
